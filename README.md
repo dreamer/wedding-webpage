@@ -9,5 +9,9 @@ Prepare development environment:
 
 Run the server:
 
+    $ make runserver
+
+Alternatively, you can enter the sandbox and run commands manually:
+
     $ pipenv shell
-    (wedding-webpage) [user@host wedding-webpage]$ 
+    (wedding-webpage) [user@host wedding-webpage]$ python manage.py runserver

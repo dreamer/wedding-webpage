@@ -7,15 +7,114 @@
 
     <title>Title</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Ovo&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+
     <style type="text/css">
         <!--
-        /* style goes here */
+        body {
+            scroll-behavior: smooth;
+
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+
+            text-align: center;
+
+            background-image: url('stara-garbarnia-b.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        a {
+            color: black;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 1px;
+        }
+
+        .cursive {
+            font-family: "Ms Madi", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .capitalized-serif {
+            font-family: "Ovo", serif;
+            font-weight: 400;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+
+        .column {
+                display: flex;
+                flex-direction: column;
+
+                /* font-size: 100%; */
+                margin-left: 10%;
+                margin-right: 10%;
+                max-width: 50em;
+                background: rgba(246, 246, 241, 0.85);
+                border-radius: 2em;
+        }
+
+        .column > div {
+                margin: 2em;
+                padding: 2em;
+                display: inline-block;
+                /* background-color: blue; */
+        }
+
+        .fade-in {
+          margin-top: 40px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 2.0s ease-out, transform 2.0s ease-out;
+        }
+        
+        .fade-in.visible {
+          padding-top: 20px;
+          opacity: 1;
+          transform: translateY(0);
+          transition: opacity 2.0s ease-out, transform 2.0s ease-out;
+        }
+
         -->
     </style>
 
     <script>
         <!--
-        /* javascript goes here */
+        window.addEventListener('scroll', () => {
+                document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".fade-in");
+
+  const onScroll = () => {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight - 100;
+      if (inView) {
+        el.classList.add("visible");
+      } else {
+        // el.classList.add("invisible");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", onScroll);
+  onScroll(); // run on load
+});
+
         -->
     </script>
 
@@ -24,27 +123,72 @@
 
     <!-- content here -->
 
-    <div>
-	<!-- First slide -->
-	Carolyne and Patryk
-    </div>
+    <div class="column">
 
-    <div>
-	Timeline
-    </div>
+        <div>
+		    <div class="capitalized-serif" style="font-size:125%">Nothing Fancy</div>
 
-    <div>
-	The location
+            <div style="font-size:250%; margin-top:5em; margin-bottom:5em;">
+		        <div class="capitalized-serif">Carolyne</div>
+		        <div class="cursive">and</div>
+		        <div class="capitalized-serif">Patryk</div>
+            </div>
 
-	<!-- map, links -->
-    </div>
+		    <p>
+		        JOYFULLY REQUEST YOUR PRESENCE
+		        AS THEY CELEBRATE THEIR UNION ON
+		    </p>
+		    <div style="font-size:200%">16/08/2025</div>
+		    <p>
+		        <strong>15:30</strong> IN THE AFTERNOON
+                AT <a href="#the-location">STARA&nbsp;GARBARNIA, WROCŁAW</a>
+		    </p>
+        </div>
 
-    <div>
-	a note on gifts
-    </div>
 
-    <div>
-	see ya!
+            <div class="fade-in">
+                Timeline
+            </div>
+
+            <div class="fade-in">
+                <h2 id="the-location">The location</h2>
+
+                <!-- map, links -->
+                <a href="https://maps.app.goo.gl/cduCr4UwnYZop2nb6">Google Maps</a>
+                <a href="https://maps.apple.com/?address=Wielkopolska%2072,%2054-027%20Wroc%C5%82aw,%20Poland&auid=5376261553819300747&ll=51.143500,16.876700&lsp=9902&q=Stara%20Garbarnia&t=m">Apple Maps</a>
+            </div>
+
+            <div class="fade-in">
+                a note on gifts
+            </div>
+
+            <div class="fade-in">
+                see ya!
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Vivamus mi odio, varius sit amet, cursus et, facilisis at,
+                risus. Aenean at enim eget magna iaculis ornare.
+                Curabitur tincidunt quam. Suspendisse aliquam, magna
+                elementum facilisis pellentesque, metus leo mattis
+                eros, et ullamcorper diam diam id augue.
+                Pellentesque velit lacus, tincidunt id, consequat vitae,
+                viverra sit amet, diam. Duis ut nibh non mi suscipit lobortis.
+                Vivamus ut dolor. Nam quam turpis, vulputate eu, posuere nec,
+                commodo eget, tortor. Phasellus bibendum sapien sit amet dolor.
+                Pellentesque purus lorem, laoreet ut, ultrices id, cursus sit amet,
+                felis. Praesent sit amet tortor non ipsum dignissim adipiscing.
+            </div>
+
+            <div class="fade-in">
+                    <div class="cursive">a note on</div>
+                    <strong>GIFTS</strong>
+                    <p>
+                    WITH ALL THAT WE HAVE, WE HAVE BEEN TRULY BLESSED,<br>
+                    YOUR PRESENCE ARE ALL THAT WE REQUEST.<br>
+                    BUT IF YOU DESIRE TO GIVE NONETHELESS,<br>
+                    MONETARY GIFTS IS ONE WE SUGGEST.
+                    </p>
+            </div>
+
     </div>
 
 </body>

@@ -1,196 +1,203 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="Author" content="Patryk Obara">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="Author" content="Patryk Obara">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Title</title>
+  <title>Carolyne & Patryk</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Ovo&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Ovo&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
 
-    <style type="text/css">
-        <!--
-        body {
-            scroll-behavior: smooth;
+  <!--
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY3wTM5lSWwLJ7yedHg8noWrLnUzE7B7c&callback=console.debug&libraries=maps,marker&v=beta">
+  </script>
+  -->
 
-            font-family: "Quicksand", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
+  <style type="text/css">
+* {
+  box-sizing: border-box;
+}
 
-            text-align: center;
+    body {
+      margin: 0;
+      padding: 2em;
 
-            background-image: url('stara-garbarnia-b.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
 
-        a {
-            color: black;
-            text-decoration-style: dashed;
-            text-decoration-thickness: 1px;
-        }
+      display: flex;
+      justify-content: center;
+      text-align: center;
 
-        .cursive {
-            font-family: "Ms Madi", cursive;
-            font-weight: 400;
-            font-style: normal;
-        }
+      background-image: url('stara-garbarnia-b.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
 
-        .capitalized-serif {
-            font-family: "Ovo", serif;
-            font-weight: 400;
-            font-style: normal;
-            text-transform: uppercase;
-        }
+    a {
+      color: black;
+      text-decoration-style: dashed;
+      text-decoration-thickness: 1px;
+    }
 
-        h2 {
-            font-weight: 300;
-            font-style: normal;
-            text-transform: uppercase;
-        }
+    h1 {
+      font-size: 220%;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+    }
 
-        .column {
-                display: flex;
-                flex-direction: column;
+    .column {
+      width: 40vw;
+      max-width: 100%;
+    }
 
-                /* font-size: 100%; */
-                margin-left: 10%;
-                margin-right: 10%;
-                max-width: 50em;
-                background: rgba(246, 246, 241, 0.85);
-                border-radius: 2em;
-        }
+    .uppercase {
+      text-transform: uppercase;
+    }
 
-        .column > div {
-                margin: 2em;
-                padding: 2em;
-                display: inline-block;
-                /* background-color: blue; */
-        }
+    .cursive {
+      font-family: "Ms Madi", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-        .fade-in {
-          margin-top: 40px;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 2.0s ease-out, transform 2.0s ease-out;
-        }
-        
-        .fade-in.visible {
-          padding-top: 20px;
-          opacity: 1;
-          transform: translateY(0);
-          transition: opacity 2.0s ease-out, transform 2.0s ease-out;
-        }
+    .capitalized-serif {
+      font-family: "Ovo", serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+    }
 
-        -->
-    </style>
+    .big-button {
+      margin: 2em;
+      padding: 1em 2em 1em 2em;
+      background-color: rgb(76, 109, 78);
+      text-transform: uppercase;
+      border-radius: 2em;
+      text-decoration: none;
+    }
 
-    <script>
-        <!--
-        window.addEventListener('scroll', () => {
-                document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-        }, false);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".fade-in");
-
-  const onScroll = () => {
-    elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      const inView = rect.top < window.innerHeight - 100;
-      if (inView) {
-        el.classList.add("visible");
-      } else {
-        // el.classList.add("invisible");
+    @media (max-aspect-ratio: 1/1) {
+      .column {
+        width: 80vw;
       }
-    });
-  };
+    }
 
-  window.addEventListener("scroll", onScroll);
-  onScroll(); // run on load
-});
+    .slide {
+      height: 100vh;
+      padding: 2rem;
+      font-size: 125%;
 
-        -->
-    </script>
+      background: rgba(246, 246, 241, 0.85);
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    gmp-map {
+      height: 50%;
+    }
+
+  </style>
 </head>
 <body>
+  <div class="column">
 
-    <!-- content here -->
+    <div class="slide">
 
-    <div class="column">
+      <div class="capitalized-serif" style="font-size:125%">Nothing Fancy</div>
+      <div class="cursive" style="font-size:600%">Just Love</div>
+      <div style="font-size:300%">
+        <div class="capitalized-serif">Carolyne</div>
+        <div class="cursive">and</div>
+        <div class="capitalized-serif">Patryk</div>
+      </div>
+      <div style="margin-top:2em">
+        <p>
+        Joyfully request your presence<br>
+        as we celebrate our union on
+        </p>
+        <div style="font-size:200%">16/08/2025</div>
+        <p>
+        <strong>15:30</strong> in the afternoon<br>
+        at <a href="#the-location">Stara&nbsp;Garbarnia, Wrocław</a>
+        </p>
+      </div>
+    </div>
 
-        <div>
-		    <div class="capitalized-serif" style="font-size:125%">Nothing Fancy</div>
+    <div class="slide">
+      <h1>Timeline</h1>
+      <p>This is the second slide. Scroll down to see more.</p>
+    </div>
 
-            <div style="font-size:250%; margin-top:5em; margin-bottom:5em;">
-		        <div class="capitalized-serif">Carolyne</div>
-		        <div class="cursive">and</div>
-		        <div class="capitalized-serif">Patryk</div>
-            </div>
+    <div class="slide" id="the-location">
+      <h1>The location</h1>
+      <div>
+        <p>
+        <a href="https://www.staragarbarnia.pl/">Stara Garbarnia</a>—find on
+        <a href="https://maps.app.goo.gl/cduCr4UwnYZop2nb6">Google Maps</a> or
+        <a href="https://maps.apple.com/?address=Wielkopolska%2072,%2054-027%20Wroc%C5%82aw,%20Poland&auid=5376261553819300747&ll=51.143500,16.876700&lsp=9902&q=Stara%20Garbarnia&t=m">Apple Maps</a>
+        <br>
+        Address: Wielkopolska 72, 54-027 Wrocław
+        </p>
+        <p>
+        (Parking spaces available)
+        </p>
+      </div>
 
-		    <p>
-		        JOYFULLY REQUEST YOUR PRESENCE
-		        AS THEY CELEBRATE THEIR UNION ON
-		    </p>
-		    <div style="font-size:200%">16/08/2025</div>
-		    <p>
-		        <strong>15:30</strong> IN THE AFTERNOON
-                AT <a href="#the-location">STARA&nbsp;GARBARNIA, WROCŁAW</a>
-		    </p>
-        </div>
-
-
-            <div class="fade-in">
-                Timeline
-            </div>
-
-            <div class="fade-in">
-                <h2 id="the-location">The location</h2>
-
-                <!-- map, links -->
-                <a href="https://maps.app.goo.gl/cduCr4UwnYZop2nb6">Google Maps</a>
-                <a href="https://maps.apple.com/?address=Wielkopolska%2072,%2054-027%20Wroc%C5%82aw,%20Poland&auid=5376261553819300747&ll=51.143500,16.876700&lsp=9902&q=Stara%20Garbarnia&t=m">Apple Maps</a>
-            </div>
-
-            <div class="fade-in">
-                a note on gifts
-            </div>
-
-            <div class="fade-in">
-                see ya!
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Vivamus mi odio, varius sit amet, cursus et, facilisis at,
-                risus. Aenean at enim eget magna iaculis ornare.
-                Curabitur tincidunt quam. Suspendisse aliquam, magna
-                elementum facilisis pellentesque, metus leo mattis
-                eros, et ullamcorper diam diam id augue.
-                Pellentesque velit lacus, tincidunt id, consequat vitae,
-                viverra sit amet, diam. Duis ut nibh non mi suscipit lobortis.
-                Vivamus ut dolor. Nam quam turpis, vulputate eu, posuere nec,
-                commodo eget, tortor. Phasellus bibendum sapien sit amet dolor.
-                Pellentesque purus lorem, laoreet ut, ultrices id, cursus sit amet,
-                felis. Praesent sit amet tortor non ipsum dignissim adipiscing.
-            </div>
-
-            <div class="fade-in">
-                    <div class="cursive">a note on</div>
-                    <strong>GIFTS</strong>
-                    <p>
-                    WITH ALL THAT WE HAVE, WE HAVE BEEN TRULY BLESSED,<br>
-                    YOUR PRESENCE ARE ALL THAT WE REQUEST.<br>
-                    BUT IF YOU DESIRE TO GIVE NONETHELESS,<br>
-                    MONETARY GIFTS IS ONE WE SUGGEST.
-                    </p>
-            </div>
+      <!--
+        <gmp-map center="51.14451217651367,16.875822067260742" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="51.14451217651367,16.875822067260742" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+      -->
 
     </div>
 
+    <div class="slide">
+      <div class="cursive" style="font-size:300%">Are you attending?</div>
+
+      <p>
+      Please Fill-up the form to notify you that you're attending. Thanks.
+      </p>
+
+      <a class="big-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeIZz_szKHGDoKIhKP9OBUrIkXhOVLs1LC5n1xSKiulvQWzBA/viewform">I am attending</a>
+
+      <p>
+      In case of any questions, don't hesitate to contact us:<br>
+      Patryk: <strong>+48 608 345 560</strong><br>
+      Carolyne: <strong>+48 732 845 757</strong>
+      </p>
+    </div>
+
+    <div class="slide">
+      <div class="cursive" style="font-size:200%">a note on</div>
+      <h1 style="margin-top:0">Gifts</h1>
+      <p>
+      With all that we have, we have been truly blessed,<br>
+      your presence are all that we request.<br>
+      But if you desire to give nonetheless,<br>
+      monetary gifts is one we suggest.
+      </p>
+      <hr style="width:50%; "/>
+      <div class="cursive" style="font-size:500%">see ya!</div>
+      <p>With much love, Caro & Patryk</p>
+    </div>
+
+  </div>
 </body>
-<!-- remember about valid HTML, valid CSS! -->
 </html>
+

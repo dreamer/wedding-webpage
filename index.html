@@ -17,6 +17,8 @@
   </script>
   -->
 
+  <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.3"></script>
+
   <style type="text/css">
     * {
       box-sizing: border-box;
@@ -92,8 +94,10 @@
     }
 
     .slide {
-      height: 100vh;
+      /* height: 100vh; */
       padding: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
       font-size: 125%;
 
       background: rgba(246, 246, 241, 0.85);
@@ -210,11 +214,11 @@
         </p>
       </div>
 
-      <!--
-        <gmp-map center="51.14451217651367,16.875822067260742" zoom="14" map-id="DEMO_MAP_ID">
+      <gmpx-api-loader key="AIzaSyDOyc3mdfQVwJiFWef7rvkLgf1Qm1muOAM"></gmpx-api-loader>
+
+      <gmp-map center="51.14451217651367,16.875822067260742" zoom="14" map-id="DEMO_MAP_ID">
         <gmp-advanced-marker position="51.14451217651367,16.875822067260742" title="My location"></gmp-advanced-marker>
-        </gmp-map>
-      -->
+      </gmp-map>
 
     </div>
 

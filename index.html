@@ -34,6 +34,19 @@
       box-sizing: border-box;
     }
 
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('background-7.jpg');
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
     body {
       margin: 0;
       padding: 2em;
@@ -47,11 +60,7 @@
       justify-content: center;
       text-align: center;
 
-      background-image: url('background-7.jpg');
       background-color: #e6efe6;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
     }
 
     a {
@@ -107,7 +116,7 @@
       margin: 1em;
     }
 
-    @media (max-aspect-ratio: 1/1) {
+    @media (max-aspect-ratio: 1/0.9) {
       .column {
         width: 86vw;
       }

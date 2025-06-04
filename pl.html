@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="Author" content="Patryk Obara">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carolyne & Patryk</title>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ms+Madi&family=Ovo&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOyc3mdfQVwJiFWef7rvkLgf1Qm1muOAM&callback=console.debug&libraries=maps,marker&v=beta"></script>
+
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('/background-7.jpg');
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    body {
+      margin: 0;
+      padding: 2em;
+
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      background-color: #e6efe6;
+    }
+
+    a {
+      color: black;
+      text-decoration-style: dashed;
+      text-decoration-thickness: 1px;
+    }
+
+    h1 {
+      font-size: 220%;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+
+    .column {
+      width: 40vw;
+      max-width: 100%;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .cursive {
+      /* font-family: "Ms Madi", cursive; */
+      font-family: "Great Vibes", cursive;
+      font-weight: 100;
+      font-style: normal;
+      line-height: 90%;
+    }
+
+    .capitalized-serif {
+      font-family: "Ovo", serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+
+    .big-button {
+      margin: 2em;
+      padding: 1em 2em 1em 2em;
+      /* background-color: rgb(76, 109, 78); */
+      background-color: #8cad92;
+      text-transform: uppercase;
+      border-radius: 2em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .seal {
+      width: 50%;
+      margin: 1em;
+    }
+
+    @media (max-aspect-ratio: 1/0.9) {
+      .column {
+        width: 86vw;
+      }
+
+      .seal {
+        width: 80%;
+        margin: 1em;
+      }
+    }
+
+    .slide {
+      /* height: 100vh; */
+      padding: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      font-size: 125%;
+
+      background: rgba(246, 246, 241, 0.85);
+      backdrop-filter: blur(3px);
+
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timeline {
+      border: none;
+      border-collapse: collapse;
+    }
+
+    .timeline p {
+      font-family: "Ovo", serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .timeline td {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      width: 50%;
+      padding: 0.5em;
+      vertical-align: top;
+    }
+
+    .timeline td:first-child {
+      border-left: none;
+      text-align: right;
+      padding-right: 1em;
+    }
+
+    .timeline td:last-child {
+      border-right: none;
+      text-align: left;
+      padding-left: 1em;
+    }
+
+    gmp-map {
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="column">
+
+    <div class="slide">
+
+      <div class="capitalized-serif" style="font-size:90%; margin-bottom:2em;">Nothing Fancy</div>
+      <div class="cursive" style="font-size:450%">Just&nbsp;Love</div>
+      <div style="font-size:170%; margin-top:0.8em;">
+        <div class="capitalized-serif">Carolyne</div>
+        <div class="cursive">i</div>
+        <div class="capitalized-serif">Patryk</div>
+      </div>
+      <div style="margin-top:2em">
+        <p>
+        Z radością zapraszamy na<br>
+        ceremonię naszych zaślubin dnia
+        </p>
+        <div style="font-size:170%">16/08/2025</div>
+        <p>
+        o <strong>15:30</strong> po południu<br>
+        w <a href="#the-location">Starej&nbsp;Garbarnii</a>, we Wrocławiu
+        </p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="cursive" style="font-size:450%">Timeline</div>
+      <p>
+
+      <p><strong>Sobota</strong></p>
+      <table class="timeline">
+        <tr><td><p>We do</p>Ceremony</td>                         <td>15:30<br><img src="/drawing-rings-2.png" width=100 /></td></tr>
+        <tr><td><p>We drink</p>Cocktail hour</td>                 <td>17:00<br><img src="/drawing-wine-glasses.png" width=100 /></td></tr>
+        <tr><td><p>We feast</p>Celebration on dinner table!</td>  <td>18:00<br><img src="/drawing-dining.png" width=100 /></td></tr>
+        <tr><td><p>We party</p>Music & laughs!</td>               <td><br><img src="/drawing-notes-2.png" width=100 /></td></tr>
+      </table>
+
+      <p><strong>Niedziela</strong></p>
+      <table class="timeline">
+        <tr><td><p>We brunch</p>Grill in the afternoon</td>       <td>14:00<br><img src="/drawing-bbq-2.png" width=100 /></td></tr>
+        <tr><td><p>We conclude</p>Late bites and good-byes</td>   <td>17:00<br><img src="/drawing-goodbye-1.png" width=100 /></td></tr>
+      </table>
+      </p>
+    </div>
+
+    <div class="slide" id="the-location">
+      <div class="cursive" style="font-size:400%">The&nbsp;location</div>
+      <div style="width:90%; height: 20em;">
+        <gmp-map center="51.14451217651367,16.875822067260742" zoom="17" map-id="e3fa2b60bbf031158d75220f">
+          <gmp-advanced-marker position="51.14451217651367,16.875822067260742" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+      </div>
+      <div>
+        <p>
+        <a href="https://www.staragarbarnia.pl/">Stara Garbarnia</a><br>
+        Adres: Wielkopolska 72, 54&#8209;027 Wrocław
+        <p>
+
+        <p>Znajdź na
+        <a href="https://maps.app.goo.gl/cduCr4UwnYZop2nb6">Mapach&nbsp;Google</a> lub
+        <a href="https://maps.apple.com/?address=Wielkopolska%2072,%2054-027%20Wroc%C5%82aw,%20Poland&auid=5376261553819300747&ll=51.143500,16.876700&lsp=9902&q=Stara%20Garbarnia&t=m">Mapach&nbsp;Apple</a>
+        </p>
+        <p>
+        (Parking dostępny przed lokalem)
+        </p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="cursive" style="font-size:450%">Czy się zjawisz?</div>
+
+      <a class="big-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeIZz_szKHGDoKIhKP9OBUrIkXhOVLs1LC5n1xSKiulvQWzBA/viewform">Tak, przyjdę &mdash; RSVP</a>
+
+      <p>
+      Please click the RSVP button and kindly fill out the form to confirm your attendance by <strong>1ˢᵗ of July</strong>.
+      </p>
+
+      <div class="capitalized-serif" style="font-size:120%;">Thank you!</div>
+
+      <p>
+      In case of any questions, don't hesitate to contact us:
+      </p>
+      <div>
+      Patryk: <strong>+48 608 345 560</strong><br>
+      Carolyne: <strong>+48 732 845 757</strong>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="cursive" style="font-size:200%">a note on</div>
+      <h1 style="margin-top:0">Gifts</h1>
+      <p>
+      Mamy już wszystko, nic nam nie brakuje,<br>
+      Wasza obecność najbardziej nas raduje.<br>
+      Jeśli jednak z prezentem przyjść chcecie,<br>
+      to koperta sprawi nam radość — jak najbardziej, wiecie!
+
+      </p>
+      <hr style="width:50%; "/>
+      <div class="cursive" style="font-size:450%">do zobaczenia!</div>
+      <img class="seal" src="/seal.svg" alt="A seal with letters CP, with Carolyne & Patryk written all around."/>
+      <p>With much love, Carol & Patryk 💕</p>
+    </div>
+
+  </div>
+</body>
+</html>

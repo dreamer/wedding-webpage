@@ -73,13 +73,15 @@ h1 {
 
 .big-button {
   margin: 2em;
+  margin-bottom: 1em;
   padding: 1em 2em 1em 2em;
   /* background-color: rgb(76, 109, 78); */
-  background-color: #8cad92;
-  text-transform: uppercase;
+  /* background-color: #8cad92; */
   border-radius: 2em;
   text-decoration: none;
   font-weight: bold;
+
+  background: linear-gradient(to bottom, #8cad92, #4c7455);
 }
 
 .seal {

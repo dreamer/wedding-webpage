@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
+
+  <link rel="preload" href="/img/background.jpg" as="image">
+
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
   <meta name="Author" content="Patryk Obara">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta property="og:title" content="Ślub Carolyne i Patryk">
+  <meta property="og:description" content="Join us as we say &quot;I do&quot; on August 16th, 2025. Find all details, RSVP, and share in the joy of our celebration.">
+  <meta property="og:url" content="https://carolyne-patryk.wedding/pl/">
+  <meta property="og:type" content="website">
+
+  <meta property="og:image" content="https://carolyne-patryk.wedding/img/banner.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pieczęć z literami CP or napisem &quot;Carolyne & Patryk&quot; dookoła.">
+
   <title>Carolyne & Patryk</title>
 
-  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ms+Madi&family=Ovo&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
 
   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOyc3mdfQVwJiFWef7rvkLgf1Qm1muOAM&callback=console.debug&libraries=maps,marker&v=beta"></script>
 
-  <style type="text/css">
+  <style>
     * {
       box-sizing: border-box;
     }
@@ -26,7 +41,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-image: url('/background-7.jpg');
+      background-image: url('/img/background.jpg');
       z-index: -1;
       background-repeat: no-repeat;
       background-size: cover;
@@ -76,6 +91,7 @@
       font-weight: 100;
       font-style: normal;
       line-height: 90%;
+      font-size: 450%;
     }
 
     .capitalized-serif {
@@ -101,14 +117,32 @@
       margin: 1em;
     }
 
-    @media (max-aspect-ratio: 1/0.9) {
+    @media screen and (max-width:1480px) and (min-width:850px) {
       .column {
-        width: 86vw;
+        width: 88vw;
+      }
+
+      .cursive {
+          font-size: 450%;
+      }
+    }
+
+    @media screen and (max-width:850px) {
+      .column {
+        width: 88vw;
+      }
+
+      .cursive {
+          font-size: 20vw;
       }
 
       .seal {
-        width: 80%;
+        width: 70%;
         margin: 1em;
+      }
+
+      #gift-notes {
+          font-size: 75%;
       }
     }
 
@@ -177,12 +211,15 @@
     <div class="slide">
 
       <div class="capitalized-serif" style="font-size:90%; margin-bottom:2em;">Nothing Fancy</div>
-      <div class="cursive" style="font-size:450%">Just&nbsp;Love</div>
-      <div style="font-size:170%; margin-top:0.8em;">
+
+      <div class="cursive">Just&#8239;Love</div>
+
+      <div style="font-size:170%; margin-top:2em;">
         <div class="capitalized-serif">Carolyne</div>
-        <div class="cursive">i</div>
+        <div class="cursive" style="font-size:100%">i</div>
         <div class="capitalized-serif">Patryk</div>
       </div>
+
       <div style="margin-top:2em">
         <p>
         Z radością zapraszamy na<br>
@@ -191,14 +228,39 @@
         <div style="font-size:170%">16/08/2025</div>
         <p>
         o <strong>15:30</strong> po południu<br>
-        w <a href="#the-location">Starej&nbsp;Garbarnii</a>, we Wrocławiu
+        w <a href="#the-location">Starej&nbsp;Garbarnii</a>, we Wrocławiu.
         </p>
       </div>
     </div>
 
-    <div class="slide">
-      <div class="cursive" style="font-size:450%">Timeline</div>
+    <div class="slide" id="rsvp">
+      <div class="cursive">Czy przyjdziesz?</div>
+
+      <a class="big-button" href="https://docs.google.com/forms/d/e/1FAIpQLScSivWD0phjjXrlWyodStMb-x_SHtGJrGZ_bl95EKK-nNoCBg/viewform">Tak,&nbsp;przyjdę / RSVP</a>
+
       <p>
+      Please click the RSVP button and kindly fill out the form to confirm your attendance by <strong>the 1<sup>st</sup> of July 2025</strong>.
+      </p>
+
+      <div class="capitalized-serif" style="font-size:120%;">Thank you!</div>
+
+      <p>
+      In case of any questions, don't hesitate to contact us:
+      </p>
+      <div style="text-align:right;">
+      Patryk:&nbsp;<strong><a href="tel:+48608345560">+48&#8239;608&#8239;345&#8239;560</a></strong>
+                           <a href="https://wa.me/48608345560"><img alt="Chat on WhatsApp" src="img/mono-whatsapp.svg" width=19></a>
+                           <a href="https://t.me/dreamer_tan" ><img alt="Chat on Telegram" src="img/mono-telegram.svg" width=20></a>
+                           <br>
+      Carolyne:&nbsp;<strong><a href="tel:+48732845757">+48&#8239;732&#8239;845&#8239;757</a></strong>
+                           <a href="https://wa.me/48732845757"><img alt="Chat on WhatsApp" src="img/mono-whatsapp.svg" width=19></a>
+                           <img alt=" " src="1x1.png" width=20>
+                           <br>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="cursive">Timeline</div>
 
       <p><strong>Sobota</strong></p>
       <table class="timeline">
@@ -213,12 +275,12 @@
         <tr><td><p>We brunch</p>Grill in the afternoon</td>       <td>14:00<br><img src="/drawing-bbq-2.png" width=100 /></td></tr>
         <tr><td><p>We conclude</p>Late bites and good-byes</td>   <td>17:00<br><img src="/drawing-goodbye-1.png" width=100 /></td></tr>
       </table>
-      </p>
+
     </div>
 
     <div class="slide" id="the-location">
-      <div class="cursive" style="font-size:400%">The&nbsp;location</div>
-      <div style="width:90%; height: 20em;">
+      <div class="cursive">The&nbsp;location</div>
+      <div style="width:90%; height: 20em; margin-top:1em;">
         <gmp-map center="51.14451217651367,16.875822067260742" zoom="17" map-id="e3fa2b60bbf031158d75220f">
           <gmp-advanced-marker position="51.14451217651367,16.875822067260742" title="My location"></gmp-advanced-marker>
         </gmp-map>
@@ -226,12 +288,12 @@
       <div>
         <p>
         <a href="https://www.staragarbarnia.pl/">Stara Garbarnia</a><br>
-        Adres: Wielkopolska 72, 54&#8209;027 Wrocław
+        Adres: Wielkopolska&nbsp;72, 54&#8209;027&nbsp;Wrocław
         <p>
 
         <p>Znajdź na
-        <a href="https://maps.app.goo.gl/cduCr4UwnYZop2nb6">Mapach&nbsp;Google</a> lub
-        <a href="https://maps.apple.com/?address=Wielkopolska%2072,%2054-027%20Wroc%C5%82aw,%20Poland&auid=5376261553819300747&ll=51.143500,16.876700&lsp=9902&q=Stara%20Garbarnia&t=m">Mapach&nbsp;Apple</a>
+        <a href="https://maps.app.goo.gl/cduCr4UwnYZop2nb6">Mapach&nbsp;Google</a>
+        lub&nbsp;<a href="https://maps.apple.com/?address=Wielkopolska%2072,%2054-027%20Wroc%C5%82aw,%20Poland&auid=5376261553819300747&ll=51.143500,16.876700&lsp=9902&q=Stara%20Garbarnia&t=m">Mapach&nbsp;Apple</a>
         </p>
         <p>
         (Parking dostępny przed lokalem)
@@ -240,41 +302,25 @@
     </div>
 
     <div class="slide">
-      <div class="cursive" style="font-size:450%">Czy się zjawisz?</div>
-
-      <a class="big-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeIZz_szKHGDoKIhKP9OBUrIkXhOVLs1LC5n1xSKiulvQWzBA/viewform">Tak, przyjdę &mdash; RSVP</a>
-
-      <p>
-      Please click the RSVP button and kindly fill out the form to confirm your attendance by <strong>1ˢᵗ of July</strong>.
-      </p>
-
-      <div class="capitalized-serif" style="font-size:120%;">Thank you!</div>
-
-      <p>
-      In case of any questions, don't hesitate to contact us:
-      </p>
-      <div>
-      Patryk: <strong>+48 608 345 560</strong><br>
-      Carolyne: <strong>+48 732 845 757</strong>
-      </div>
-    </div>
-
-    <div class="slide">
       <div class="cursive" style="font-size:200%">a note on</div>
       <h1 style="margin-top:0">Gifts</h1>
-      <p>
+
+      <p id="gift-notes">
       Mamy już wszystko, nic nam nie brakuje,<br>
       Wasza obecność najbardziej nas raduje.<br>
       Jeśli jednak z prezentem przyjść chcecie,<br>
       to koperta sprawi nam radość — jak najbardziej, wiecie!
 
       </p>
-      <hr style="width:50%; "/>
+      <hr style="width:50%;">
       <div class="cursive" style="font-size:450%">do zobaczenia!</div>
-      <img class="seal" src="/seal.svg" alt="A seal with letters CP, with Carolyne & Patryk written all around."/>
+      <img class="seal" src="seal.svg" alt="Pieczęć z literami CP or napisem &quot;Carolyne & Patryk&quot; dookoła.">
       <p>With much love, Carol & Patryk 💕</p>
     </div>
 
+    <p>
+      <strong><a href="#rsvp">Contact Us</a></strong>
+    </p>
   </div>
 </body>
 </html>

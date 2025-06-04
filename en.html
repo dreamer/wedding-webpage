@@ -29,6 +29,14 @@
   <link rel="stylesheet" href="/style.css">
 
   <style>
+
+  @media screen and (max-width:1480px) and (min-width:850px) {
+    #the-location-header { font-size: 300%; color: red; }
+  }
+
+  @media screen and (max-width:850px) {
+    #the-location-header { font-size: 16vw; color: blue; }
+  }
   </style>
 
   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOyc3mdfQVwJiFWef7rvkLgf1Qm1muOAM&callback=console.debug&libraries=maps,marker&v=beta"></script>
@@ -111,8 +119,8 @@
     </div>
 
     <div class="slide" id="the-location">
-      <div class="cursive">The&nbsp;location</div>
-      <div style="width:90%; height: 20em; margin-top:1em;">
+      <div class="cursive" id="the-location-header">The&nbsp;Location</div>
+      <div style="width:100%; height: 20em; margin-top:1em;">
         <gmp-map center="51.14451217651367,16.875822067260742" zoom="17" map-id="e3fa2b60bbf031158d75220f">
           <gmp-advanced-marker position="51.14451217651367,16.875822067260742" title="Wedding location"></gmp-advanced-marker>
         </gmp-map>
@@ -151,9 +159,6 @@
       <p>With much love, Carol & Patryk 💕</p>
     </div>
 
-    <p>
-      <strong><a href="#rsvp">Contact Us</a></strong>
-    </p>
   </div>
 </body>
 </html>

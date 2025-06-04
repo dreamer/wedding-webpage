@@ -18,6 +18,8 @@ body::before {
 body {
   margin: 0;
   padding: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;

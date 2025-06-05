@@ -29,6 +29,16 @@
   <link rel="stylesheet" href="/style.css">
 
   <style>
+
+  @media screen and (max-width:850px) {
+    #cya {
+      font-size: 16vw;
+    }
+    #coming {
+      font-size: 16vw;
+    }
+  }
+
   </style>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOyc3mdfQVwJiFWef7rvkLgf1Qm1muOAM&callback=console.debug&libraries=maps,marker&v=beta" async defer></script>
@@ -68,8 +78,8 @@
     </div>
 
     <div class="slide" id="rsvp">
-      <div class="cursive">
-        Czy przyjdziesz?
+      <div class="cursive" id="coming">
+        Przyjdziesz?
       </div>
       <a class="big-button" href="https://docs.google.com/forms/d/e/1FAIpQLScSivWD0phjjXrlWyodStMb-x_SHtGJrGZ_bl95EKK-nNoCBg/viewform">Kliknij tu by potwierdzić</a>
       <p>
@@ -89,16 +99,16 @@
 
       <p><strong>Sobota</strong></p>
       <table class="timeline">
-        <tr><td><p>We do</p>Ceremony</td>                        <td>15:30<br><img width=100 alt="Wedding bands" src="/img/drawing-rings-2.png"></td></tr>
-        <tr><td><p>We drink</p>Cocktail hour</td>                <td>17:00<br><img width=100 alt="Wine glasses"  src="/img/drawing-wine-glasses.png"></td></tr>
-        <tr><td><p>We feast</p>Celebration on dinner table!</td> <td>18:00<br><img width=100 alt="Dining plate"  src="/img/drawing-dining.png"></td></tr>
-        <tr><td><p>We party</p>Music & laughs!</td>              <td>     <br><img width=100 alt="Music notes"   src="/img/drawing-notes-2.png"></td></tr>
+        <tr><td><p>Ślubujemy</p>Ceremony                         <td>15:30<br><img width=100 alt="Wedding bands" src="/img/drawing-rings-2.png">
+        <tr><td><p>We drink</p>Cocktail hour                     <td>17:00<br><img width=100 alt="Wine glasses"  src="/img/drawing-wine-glasses.png">
+        <tr><td><p>Biesiadujemy</p>Celebration on dinner table!  <td>18:00<br><img width=100 alt="Dining plate"  src="/img/drawing-dining.png">
+        <tr><td><p>Imprezujemy</p>Music & laughs!                <td>     <br><img width=100 alt="Music notes"   src="/img/drawing-notes-2.png">
       </table>
 
       <p><strong>Niedziela</strong></p>
       <table class="timeline">
-        <tr><td><p>We brunch</p>Grill in the afternoon</td>      <td>14:00<br><img width=100 alt="BBQ"      src="/img/drawing-bbq-2.png"></td></tr>
-        <tr><td><p>We conclude</p>Late bites and good-byes</td>  <td>17:00<br><img width=100 alt="Good-bye" src="/img/drawing-goodbye-1.png"></td></tr>
+        <tr><td><p>Poprawiamy</p>Grill in the afternoon          <td>14:00<br><img width=100 alt="BBQ"      src="/img/drawing-bbq-2.png">
+        <tr><td><p>Kończymy</p>Late bites and good-byes          <td>17:00<br><img width=100 alt="Good-bye" src="/img/drawing-goodbye-1.png">
       </table>
 
     </div>
@@ -129,8 +139,8 @@
     </div>
 
     <div class="slide">
-      <div class="cursive" style="font-size:200%">a note on</div>
-      <h1 style="margin-top:0; margin-bottom:0;">Gifts</h1>
+      <div class="cursive" style="font-size:200%">co do</div>
+      <h1 style="margin-top:0; margin-bottom:0; font-size:190%">Prezentów</h1>
       <p id="gift-notes">
         Mamy już wszystko, nic nam nie brakuje,<br>
         Wasza obecność najbardziej nas raduje.<br>
@@ -138,9 +148,9 @@
         to koperta sprawi nam radość — jak najbardziej, wiecie!
       </p>
       <hr style="width:50%;">
-      <div class="cursive" style="font-size:450%">do zobaczenia!</div>
+      <div class="cursive" id="cya">do zobaczenia!</div>
       <img class="seal" src="/img/seal.svg" alt="Pieczęć z literami CP or napisem &quot;Carolyne & Patryk&quot; dookoła.">
-      <p>With much love, Carol & Patryk 💕</p>
+      <p>Z miłością, Carol i Patryk 💕</p>
     </div>
 
   </div>

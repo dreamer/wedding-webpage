@@ -17,7 +17,7 @@ body::before {
 
 body {
   margin: 0;
-  padding: 2em;
+  padding-top: 2.5em;
   padding-left: 1em;
   padding-right: 1em;
 
@@ -178,7 +178,14 @@ gmp-map {
 #lang {
   position: absolute;
   top: 0;
-  right: 1em;
-  font-size: 150%;
+  right: 0;
+  font-size: 120%;
+  font-weight: bold;
   text-decoration-line: none;
+  padding: 0.2em;
+  padding-right: 1em;
+}
+
+#lang img {
+  vertical-align: middle;
 }

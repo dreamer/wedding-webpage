@@ -33,6 +33,11 @@
   @media screen and (max-width:850px) {
     #the-location-header { font-size: 16vw; }
   }
+
+  ul {
+    list-style-type: "⬩ ";
+  }
+
   </style>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOyc3mdfQVwJiFWef7rvkLgf1Qm1muOAM&callback=console.debug&libraries=maps,marker&v=beta" async defer></script>
@@ -41,7 +46,7 @@
 <body>
 
   <a id="lang" href="/pl/" title="Switch language to polish">
-    pol <img src="/img/poland.svg" alt="Polish flag" width=30>
+    PL <img src="/img/poland.svg" alt="Polish flag" width=30>
   </a>
 
   <div class="column">
@@ -115,7 +120,12 @@
       </div>
       <div>
         <p>
-          The wedding ceremony, reception, and the second-day celebration all take place at <a href="https://www.staragarbarnia.pl/">Stara&nbsp;Garbarnia</a>.
+          All wedding events will take place at <a href="https://www.staragarbarnia.pl/">Stara&nbsp;Garbarnia</a>:
+          <ul style="text-align: left; padding-left: calc(50% - 5em)">
+              <li>Weding ceremony
+              <li>Reception
+              <li>Next-Day Grill & Chill
+          </ul>
         </p>
         <p>
           Address: Wielkopolska&nbsp;72, 54&#8209;027&nbsp;Wrocław, Poland

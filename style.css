@@ -140,7 +140,7 @@ h1 {
 
 .timeline p {
   font-family: "Bellefair", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -175,7 +175,7 @@ gmp-map {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 120%;
+  font-size: 100%;
   font-weight: bold;
   text-decoration-line: none;
   padding: 0.2em;
@@ -183,5 +183,5 @@ gmp-map {
 }
 
 #lang img {
-  vertical-align: middle;
+  vertical-align: top;
 }
